@@ -17,8 +17,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true})); 
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://jobportal-api-tau.vercel.app/',
-    methods: ["POST","GET","PUT"],
+    origin:'https://jobportal-frontend-eta.vercel.app/',
+    methods: ['POST','GET','PUT','DELETE'],
     credentials:true
 }
 
