@@ -1,6 +1,6 @@
 import { Job } from "../models/job.model.js";
 
-// admin post krega job
+// job posting by admin
 export const postJob = async (req, res) => {
     try {
         const { title, description, requirements, salary, location, jobType, experience, position, companyId } = req.body;
@@ -33,7 +33,7 @@ export const postJob = async (req, res) => {
         console.log(error);
     }
 }
-// student k liye
+// For students
 export const getAllJobs = async (req, res) => {
     try {
         const keyword = req.query.keyword || "";
@@ -78,7 +78,7 @@ export const getJobById = async (req, res) => {
         console.log(error);
     }
 }
-// admin kitne job create kra hai abhi tk
+//Number of jobs created by admin
 export const getAdminJobs = async (req, res) => {
     try {
         const adminId = req.id;
