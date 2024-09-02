@@ -27,6 +27,7 @@ const CategoryCarousel = () => {
                 <CarouselContent>
                     {
                         category.map((cat, index) => (
+                            // eslint-disable-next-line react/jsx-key
                             <CarouselItem className="md:basis-1/2 lg-basis-1/3">
                                 <Button onClick={()=>searchJobHandler(cat)} variant="outline" className="rounded-full">{cat}</Button>
                             </CarouselItem>
